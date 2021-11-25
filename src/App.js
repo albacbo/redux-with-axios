@@ -19,10 +19,10 @@ class App extends Component {
             <Link to="/students/new">New Student</Link> | 
           </div>
           <Routes>
-            <Route exact path="/" component={Students}/>
-            <Route exact path="/students/new" component={StudentForm}  />
-            <Route exact path="/students/edit/:id" component={StudentForm}  />
-            <Route path="/students/:id" component={Students} />
+            <Route exact path="/" component={<Students />}/>
+            <Route exact path="/students/new" component={<StudentForm />}  />
+            <Route exact path="/students/edit/:id" component={<StudentForm />}  />
+            <Route path="/students/:id" component={<Students />} />
           </Routes>          
         </div>
       </div>
