@@ -4,19 +4,19 @@ import { GET_STUDENTS, GET_STUDENT,
 let initialStudents = [
     {
         id: "8xf0y6ziyjabvozdd253nd",
-        name: "Pepe",
-        surname: "Soto",
-        age: 28,
+        name: "Gabrielle Marie",
+        surname: "Chatouiller",
+        age: 20,
       },
        {
         id: "6ni6ok3ym7mf1p33lnez",
-        name: "Francisco",
-        surname: "Albiol",
-        age: 18,
+        name: "Henry T.",
+        surname: "Hendricks",
+        age: 28,
       }
 ];
 
-let reducer = (state = initialStudents, action) => {
+let studentReducer = (state = initialStudents, action) => {
     switch (action.type) {
         case GET_STUDENTS:         
           return state;
@@ -59,4 +59,4 @@ let reducer = (state = initialStudents, action) => {
     });
   }
 
-export default reducer;
+export default studentReducer;

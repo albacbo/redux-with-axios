@@ -8,7 +8,7 @@ import axios from 'axios';
 export const getStudents = () => async dispatch => {
     
     try{
-        const res = await axios.get(`localhost:3000/students`)
+        const res = await axios.get(`localhost:3002/students`)
         dispatch( {
             type: GET_STUDENTS,
             payload: res.data
@@ -25,7 +25,7 @@ export const getStudents = () => async dispatch => {
 export const getStudent = (id) => async dispatch => {
     
     try{
-        const res = await axios.get(`localhost:3000/students/:id`)
+        const res = await axios.get(`localhost:3002/students/:id`)
         dispatch( {
             type: GET_STUDENT,
             id,
@@ -43,7 +43,7 @@ export const getStudent = (id) => async dispatch => {
 export const addStudent = (student) => async dispatch => {
     
     try{
-        const res = await axios.post(`localhost:3000/students`)
+        const res = await axios.post(`localhost:3002/students`)
         dispatch( {
             type: ADD_STUDENT,
             student,
@@ -61,7 +61,7 @@ export const addStudent = (student) => async dispatch => {
 export const updateStudent = (student) => async dispatch => {
     
     try{
-        const res = await axios.put(`localhost:3000/students`)
+        const res = await axios.put(`localhost:3002/students`)
         dispatch( {
             type: UPDATE_STUDENT,
             student,
@@ -79,7 +79,7 @@ export const updateStudent = (student) => async dispatch => {
 export const deleteStudent = (id) => async dispatch => {
     
     try{
-        const res = await axios.post(`localhost:3000/students`)
+        const res = await axios.post(`localhost:3002/students`)
         dispatch( {
             type: DELETE_STUDENT,
             id,
